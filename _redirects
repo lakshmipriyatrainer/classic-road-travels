@@ -1,0 +1,9 @@
+# Force HTTPS + remove www
+http://* https://classicroadtravels.in/:splat 301
+https://www.classicroadtravels.in/* https://classicroadtravels.in/:splat 301
+
+# Remove index.html
+https://classicroadtravels.in/index.html https://classicroadtravels.in/ 301
+
+# Redirect root with hash (best effort)
+https://classicroadtravels.in/# https://classicroadtravels.in/ 301
