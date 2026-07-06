@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Send Message | Classic Road Travels</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{--blue:#0052CC;--gold:#D4A017;--dark:#1c2331}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb}
+header{background:var(--blue);color:#fff;padding:18px;text-align:center}
+header h1{margin:0}
+.container{max-width:900px;margin:40px auto;background:#fff;padding:30px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.12)}
+h2{text-align:center;color:var(--blue)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{font-weight:bold;font-size:14px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:8px;margin-top:6px}
+textarea{height:120px}
+.full{grid-column:1/-1}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+button,a.btn{padding:13px 22px;border:none;border-radius:8px;text-decoration:none;color:#fff;font-weight:bold;cursor:pointer}
+.send{background:var(--blue)}
+.wa{background:#25D366}
+.call{background:var(--gold)}
+footer{background:var(--dark);color:#fff;padding:25px;text-align:center;margin-top:40px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<img src="logo 2.png" style="height:70px"><h1>Classic Road Travels</h1>
+<p>Your Trusted Travel Partner</p>
+</header>
+
+<div class="container">
+<h2>Send Your Enquiry</h2>
+<form>
+<div class="grid">
+<div class="full">
+<label>Service Required</label>
+<select id="service">
+<option>Airport Pickup & Drop</option>
+<option>Local Chennai Taxi Service</option>
+<option>Outstation Cab Service</option>
+<option>One Way Taxi</option>
+<option>Round Trip Taxi</option>
+<option>Car with Driver</option>
+<option>Acting Driver Service</option>
+<option>Family Tour Packages</option>
+<option>Honeymoon Packages</option>
+<option>Group Tour Packages</option>
+<option>Pilgrimage Tours</option>
+<option>Hill Station Tours</option>
+<option>South India Tour Packages</option>
+<option>Customized Holiday Packages</option>
+<option>Others</option>
+</select>
+</div>
+
+<div><label>Full Name</label><input type="text"></div>
+<div><label>Phone Number</label><input type="tel"></div>
+<div><label>Email</label><input type="email"></div>
+<div><label>Travel Date</label><input type="date"></div>
+<div><label>Pickup Location</label><input type="text"></div>
+<div><label>Destination</label><input type="text"></div>
+<div><label>Passengers</label><input type="number"></div>
+<div><label>City</label><input type="text"></div>
+<div class="full"><label>Message</label><textarea placeholder="Enter your travel requirements..."></textarea></div>
+</div>
+<div class="btns">
+<button class="send" type="submit">Send Message</button>
+<a class="btn wa" href="https://wa.me/919840199591" target="_blank">WhatsApp</a>
+<a class="btn call" href="tel:+919840199591">Call Now</a>
+</div>
+</form>
+</div>
+
+<footer>
+<h3>Classic Road Travels</h3>
+<p>Your Trusted Travel Partner</p>
+<p>Maduravoyal, Chennai | +91 98401 99591 | classicroadtravels@gmail.com</p>
+<p>© 2026 Classic Road Travels. All Rights Reserved.</p>
+</footer>
+<script>
+const params = new URLSearchParams(window.location.search);
+const service = params.get("service");
+
+if (service) {
+    document.getElementById("service").value = service;
+}
+</script>
+</body>
+</html>

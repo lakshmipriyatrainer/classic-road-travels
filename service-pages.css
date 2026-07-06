@@ -1,0 +1,648 @@
+/*==========================
+GROUP TOUR HERO
+==========================*/
+
+.group-hero{
+    min-height:100vh;
+    padding-top:110px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("assets/grouptour-bg.webp");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.group-hero .hero-container{
+    display:block;
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+.group-hero .hero-content{
+    text-align:center;
+}
+
+.hero-image img{
+
+width:100%;
+
+border-radius:22px;
+
+display:block;
+
+box-shadow:0 25px 60px rgba(0,0,0,.18);
+
+}
+
+.hero-kicker{
+
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    backdrop-filter:blur(10px);
+
+}
+
+.group-hero .hero-title{
+
+font-size:60px;
+
+line-height:1.1;
+
+margin-bottom:20px;
+
+}
+
+.group-hero .hero-intro{
+    font-size:18px;
+    line-height:1.9;
+    color:#ffffff;
+    text-shadow:2px 2px 8px rgba(0,0,0,.8);
+    margin-bottom:35px;
+}
+
+.hero-actions{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+.group-hero .hero-content{
+    text-align:center;
+}
+
+.btn-outline-light{
+
+background:#fff;
+
+border:2px solid #003C99;
+
+color:#003C99;
+
+}
+
+.btn-outline-light:hover{
+
+background:#003C99;
+
+color:#fff;
+
+}
+
+@media(max-width:992px){
+
+.group-hero .hero-container{
+
+grid-template-columns:1fr;
+
+}
+}
+/*==================================================
+COMMON SERVICE PAGE LAYOUT
+==================================================*/
+
+.intro-layout{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+
+.emblem-panel img{
+width:100%;
+border-radius:20px;
+box-shadow:0 20px 50px rgba(0,0,0,.15);
+display:block;
+}
+
+.intro-copy p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+margin-bottom:25px;
+}
+
+.highlight-strip{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:35px;
+}
+
+.highlight-item{
+background:#fff;
+padding:25px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+transition:.35s;
+}
+
+.highlight-item:hover{
+transform:translateY(-8px);
+}
+
+.highlight-item strong{
+display:block;
+font-size:34px;
+color:#0057b8;
+margin-bottom:8px;
+}
+
+.highlight-item span{
+color:#666;
+font-size:15px;
+}
+
+@media(max-width:992px){
+
+.intro-layout{
+grid-template-columns:1fr;
+}
+
+.highlight-strip{
+grid-template-columns:1fr;
+}
+
+}
+/*==================================================
+PACKAGE CARDS
+==================================================*/
+
+.package-section{
+padding:90px 0;
+background:#f8fbff;
+}
+
+.package-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:50px;
+}
+
+.package-card{
+background:#fff;
+padding:35px;
+border-radius:22px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+transition:.35s;
+}
+
+.package-card:hover{
+transform:translateY(-10px);
+box-shadow:0 25px 55px rgba(0,0,0,.15);
+}
+
+.package-icon{
+width:70px;
+height:70px;
+background:#0057b8;
+color:#fff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+margin-bottom:25px;
+}
+
+.package-card h3{
+font-size:28px;
+color:#003C99;
+margin-bottom:15px;
+}
+
+.package-card p{
+color:#666;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+.package-card ul{
+list-style:none;
+padding:0;
+}
+
+.package-card li{
+margin-bottom:12px;
+color:#555;
+}
+
+.package-card li i{
+color:#0aa84f;
+margin-right:10px;
+}
+
+@media(max-width:992px){
+
+.package-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:576px){
+
+.package-grid{
+grid-template-columns:1fr;
+}
+
+}
+/*==================================================
+DESTINATIONS
+==================================================*/
+
+.destinations-showcase{
+padding:90px 0;
+background:#fff;
+}
+
+.destination-layout{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+
+.destination-panel h2{
+font-size:42px;
+color:#003C99;
+margin:20px 0;
+}
+
+.destination-panel p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+margin-bottom:35px;
+}
+
+.destination-list{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.destination-list li{
+display:flex;
+align-items:flex-start;
+gap:18px;
+padding:22px;
+margin-bottom:20px;
+background:#f8fbff;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.35s;
+}
+
+.destination-list li:hover{
+transform:translateX(10px);
+}
+
+.destination-list i{
+font-size:24px;
+color:#0057b8;
+margin-top:5px;
+}
+
+.destination-list strong{
+display:block;
+font-size:20px;
+color:#003C99;
+margin-bottom:5px;
+}
+
+.destination-list span{
+color:#666;
+line-height:1.7;
+}
+
+@media(max-width:992px){
+
+.destination-layout{
+grid-template-columns:1fr;
+}
+
+}
+/*==================================================
+PACKAGE INCLUDES
+==================================================*/
+
+.included-section{
+padding:90px 0;
+background:#f8fbff;
+}
+
+.included-box{
+background:#fff;
+padding:60px;
+border-radius:25px;
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+.included-badge{
+display:flex;
+align-items:center;
+gap:15px;
+font-size:28px;
+font-weight:700;
+color:#003C99;
+margin-bottom:40px;
+}
+
+.included-badge i{
+font-size:42px;
+color:#0057b8;
+}
+
+.included-list{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+list-style:none;
+padding:0;
+}
+
+.included-list li{
+background:#f8fbff;
+padding:18px 22px;
+border-radius:14px;
+display:flex;
+align-items:center;
+gap:15px;
+font-size:17px;
+box-shadow:0 8px 25px rgba(0,0,0,.05);
+transition:.3s;
+}
+
+.included-list li:hover{
+transform:translateY(-5px);
+}
+
+.included-list i{
+color:#00a651;
+font-size:20px;
+}
+
+@media(max-width:768px){
+
+.included-box{
+padding:35px;
+}
+
+.included-list{
+grid-template-columns:1fr;
+}
+
+}
+/*==================================================
+WHY CHOOSE US
+==================================================*/
+
+.why-couples-section{
+padding:90px 0;
+background:#ffffff;
+}
+
+.reason-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:50px;
+}
+
+.reason-card{
+background:#fff;
+padding:35px;
+border-radius:22px;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+transition:.35s;
+}
+
+.reason-card:hover{
+transform:translateY(-10px);
+box-shadow:0 25px 55px rgba(0,0,0,.15);
+}
+
+.reason-card i{
+font-size:48px;
+color:#0057b8;
+margin-bottom:20px;
+}
+
+.reason-card h3{
+font-size:26px;
+color:#003C99;
+margin-bottom:15px;
+}
+
+.reason-card p{
+color:#666;
+line-height:1.8;
+}
+
+@media(max-width:992px){
+
+.reason-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:576px){
+
+.reason-grid{
+grid-template-columns:1fr;
+}
+
+}
+.pilgrimage-hero{
+
+    min-height:100vh;
+    padding-top:110px;
+
+    background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("assets/pilgrimagetour-bg.webp");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+}
+
+.pilgrimage-hero .hero-container{
+
+    display:block;
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+
+}
+
+.hero-kicker{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#eef5ff;
+
+    color:#003C99;
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.hero-kicker i{
+
+    color:#d4af37;
+
+}
+
+.pilgrimage-hero .hero-title{
+
+    font-size:60px;
+    line-height:1.1;
+    color:#fff;
+    text-shadow:2px 2px 8px rgba(0,0,0,.8);
+
+}
+
+.pilgrimage-hero .hero-intro{
+
+    color:#fff;
+    text-shadow:2px 2px 8px rgba(0,0,0,.8);
+
+}
+
+.hero-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-bottom:40px;
+
+}
+
+.hero-features div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-weight:500;
+
+    color:#333;
+
+}
+
+.hero-features i{
+
+    color:#00a651;
+
+    font-size:18px;
+
+}
+
+.hero-image{
+
+    position:relative;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:24px;
+
+    border:8px solid #ffffff;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.18);
+
+    transition:.5s;
+
+}
+
+.hero-image:hover img{
+
+    transform:scale(1.03);
+
+}
+
+@media(max-width:992px){
+
+.pilgrimage-hero .hero-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-features{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-actions{
+
+justify-content:center;
+
+}
+
+.pilgrimage-hero .hero-title{
+
+font-size:42px;
+
+}
+
+}
+/*=========================
+Hero Collage
+=========================*/
+
+.hero-collage{
+    padding:80px 0;
+    background:#fff;
+}
+.hero-collage .container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.hero-collage img{
+    width:100%;
+    max-width:1000px;
+    display:block;
+    margin:0 auto;
+    border-radius:24px;
+    border:8px solid #fff;
+    box-shadow:0 25px 60px rgba(0,0,0,.20);
+}
